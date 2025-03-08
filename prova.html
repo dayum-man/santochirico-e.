@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bugiardino Inflamox</title>
+    <style>
+        /* Impostazioni globali */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Menu di navigazione */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+            transform: translateY(-5px);
+        }
+
+        nav ul li a:active {
+            transform: translateY(2px);
+        }
+
+        /* Sezione principale */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Centratura e contenitore delle sezioni */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Allineamento sezioni */
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #3498db;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Posizionamento delle immagini */
+        .img-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .warning {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Tabella dosaggio */
+        .dosage-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .dosage-table th, .dosage-table td {
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1em;
+            border: 1px solid #ddd;
+        }
+
+        .dosage-table th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .dosage-table tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+
+        .dosage-table tr:hover {
+            background-color: #dcdfe1;
+        }
+
+        /* Pulsante per il ritorno in alto */
+        .back-to-top {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .back-to-top:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menu di navigazione -->
+    <nav>
+        <ul>
+            <li><a href="#principio-attivo">Principio Attivo</a></li>
+            <li><a href="#eccipienti">Eccipienti</a></li>
+            <li><a href="#forma-farmaceutica">Forma Farmaceutica</a></li>
+            <li><a href="#dosaggio">Dosaggio</a></li>
+            <li><a href="#farmacocinetica">Farmacocinetica</a></li>
+            <li><a href="#farmacodinamica">Farmacodinamica</a></li>
+            <li><a href="#effetti-collaterali">Effetti Collaterali</a></li>
+            <li><a href="#avvertenze">Avvertenze</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sezione principale -->
+    <header>
+        <h1>Bugiardino Inflamox</h1>
+        <p>Informazioni sul farmaco contenente diclofenac</p>
+    </header>
+
+    <div class="container">
+        <!-- Sezione Principio Attivo -->
+        <section id="principio-attivo">
+            <h2>Principio Attivo</h2>
+            <p>Il principio attivo di Inflamox è il diclofenac, un farmaco appartenente alla classe dei FANS (Farmaci Antinfiammatori Non Steroidei), utilizzato per ridurre dolore e infiammazione.</p>
+            <div class="img-container">
+                <img src="diclofenac.jpg" alt="Diclofenac">
+            </div>
+        </section>
+
+        <!-- Sezione Eccipienti -->
+        <section id="eccipienti">
+            <h2>Eccipienti</h2>
+            <ul>
+                <li>Dietilamina</li>
+                <li>Carbomeri</li>
+                <li>Macrogol cetosteriale etere</li>
+                <li>Cocoile caprilocaprato</li>
+                <li>Alcool isopropilico</li>
+                <li>Paraffina</li>
+                <li>Profumo cream 45 (contiene benzile benzonato)</li>
+                <li>Glicole propilenico</li>
+                <li>Acqua depurata</li>
+            </ul>
+        </section>
+
+        <!-- Sezione Forma Farmaceutica -->
+        <section id="forma-farmaceutica">
+            <h2>Forma Farmaceutica</h2>
+            <ul>
+                <li>Supposte</li>
+            </ul>
+        </section>
+
+        <!-- Sezione Dosaggio -->
+        <section id="dosaggio">
+            <h2>Dosaggio delle Supposte</h2>
+            <table class="dosage-table">
+                <tr>
+                    <th>Forma Farmaceutica</th>
+                    <th>Dosaggio Adulti</th>
+                </tr>
+                <tr>
+                    <td>Supposte</td>
+                    <td>50-150 mg al giorno, suddivisi in 1-2 somministrazioni</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sezione Farmacocinetica -->
+        <section id="farmacocinetica">
+            <h2>Farmacocinetica</h2>
+            <p><strong>Assorbimento:</strong> Viene assorbito principalmente nell'intestino tenue, con una liberazione lenta rispetto ad altre forme orali.</p>
+            <p><strong>Distribuzione:</strong> Si lega oltre il 99% alle proteine plasmatiche.</p>
+            <p><strong>Metabolismo:</strong> Viene metabolizzato principalmente a livello epatico, con effetto di primo passaggio.</p>
+            <p><strong>Eliminazione:</strong> 60% tramite i reni, 40% tramite la bile e le feci.</p>
+        </section>
+
+        <!-- Sezione Farmacodinamica -->
+        <section id="farmacodinamica">
+            <h2>Farmacodinamica</h2>
+            <p>Il diclofenac agisce come un inibitore delle cicloossigenasi (COX-1 e COX-2), riducendo la sintesi delle prostaglandine, sostanze chimiche coinvolte nel dolore e nell'infiammazione.</p>
+        </section>
+
+        <!-- Sezione Effetti Collaterali -->
+        <section id="effetti-collaterali">
+            <h2>Effetti Collaterali</h2>
+            <ul>
+                <li>Gastrointestinali: gastrite, ulcere, sanguinamento gastrointestinale</li>
+                <li>Cardiovascolari: aumento del rischio di infarto e ictus</li>
+                <li>Renali: ritenzione idrica, insufficienza renale</li>
+                <li>Epatici: aumento delle transaminasi</li>
+                <li>Reazioni allergiche: orticaria, broncospasmo</li>
+            </ul>
+        </section>
+
+        <!-- Sezione Avvertenze -->
+        <section id="avvertenze" class="warning">
+            <h2>Avvertenze e Precauzioni</h2>
+            <ul>
+                <li>Da evitare in caso di insufficienza cardiaca grave, problemi renali o epatici.</li>
+                <li>Non deve essere usato in gravidanza (specialmente nel terzo trimestre) per il rischio di chiusura precoce del dotto arterioso fetale.</li>
+                <li>In pazienti a rischio di ulcere gastriche, si consiglia l'uso di gastroprotettori.</li>
+            </ul>
+        </section>
+
+        <!-- Pulsante per il ritorno in alto -->
+        <a href="#top" class="back-to-top">Torna su</a>
+    </div>
+
+</body>
+</html>
